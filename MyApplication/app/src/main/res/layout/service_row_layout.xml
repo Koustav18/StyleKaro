@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <ImageView
+            android:id="@+id/salon_logo"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:padding="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hair_cut" />
+
+        <TextView
+            android:id="@+id/offer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/salon_logo"
+            android:maxLines="1"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/hair_cut"
+            android:textColor="#222"
+            android:textStyle="bold"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/offer_title"
+            android:id="@+id/offer_detail_text"
+            android:layout_toRightOf="@+id/salon_logo"
+            android:maxLines="3"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="@string/hair_cut_description"
+            android:textColor="#666"
+            android:textSize="12dp" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/right_arrow"
+        android:src="@drawable/right_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"/>
+        <View  android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/salon_logo"
+            android:background="@android:color/black"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

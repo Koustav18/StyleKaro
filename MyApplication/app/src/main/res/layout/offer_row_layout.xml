@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="2dp"
+    card_view:cardUseCompatPadding="true"
+    app:cardElevation="4dp"
+
+    android:layout_margin="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/salon_upper_layout"
+            >
+
+            <ImageView
+                android:id="@+id/salon_logo"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:padding="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/habibs" />
+
+            <TextView
+                android:id="@+id/offer_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/salon_logo"
+                android:maxLines="1"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="Get 30% Discount"
+                android:textColor="#222"
+                android:textStyle="bold"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/offer_title"
+                android:id="@+id/offer_detail_text"
+                android:layout_toRightOf="@+id/salon_logo"
+                android:maxLines="3"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:text="Get 30% Discount on hair spa today"
+                android:textColor="#666"
+                android:textSize="12dp" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/wishlist"
+                android:src="@drawable/unselected_heart"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:padding="0dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+
+                android:id="@+id/goto_offers"
+                android:layout_below="@+id/wishlist"
+                android:padding="5dp"
+                android:textColor="@color/windowBackground"
+                android:text="Offer Details"
+                android:background="@color/colorPrimary"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"/>
+
+        </RelativeLayout>
+
+        <View  android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/salon_lwer_layout"
+            android:background="@android:color/black"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

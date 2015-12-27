@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="2dp"
+    card_view:cardUseCompatPadding="true"
+    app:cardElevation="4dp"
+
+    android:layout_margin="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/salon_upper_layout"
+        >
+
+        <ImageView
+            android:id="@+id/salon_logo"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:padding="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/habibs" />
+
+        <TextView
+            android:id="@+id/offer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/salon_logo"
+            android:maxLines="1"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:text="Javed Habibs"
+            android:textColor="#222"
+            android:textStyle="bold"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/offer_title"
+            android:id="@+id/offer_detail_text"
+            android:layout_toRightOf="@+id/salon_logo"
+            android:maxLines="3"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="Madhapur,Hyderabad"
+            android:textColor="#666"
+            android:textSize="12dp" />
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/salon_rating_view"
+            android:text="4.3"
+            android:textColor="@color/windowBackground"
+            android:background="#d32f2f"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="0dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/salon_lwer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/salon_upper_layout"
+
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/horizontal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/horizontal"
+            android:padding="0dp"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:src="@drawable/contact"
+                android:id="@+id/contact_salon"
+                android:padding="5dp"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:padding="5dp"
+                android:src="@drawable/location"
+                android:id="@+id/location"
+
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:src="@drawable/offers"
+                android:id="@+id/offers"
+                android:padding="5dp"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:src="@drawable/share"
+                android:id="@+id/share"
+                android:padding="5dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View  android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/salon_lwer_layout"
+        android:background="@android:color/black"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
